@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat|Merriweather&display=swap'); :root {
-    --main-color: #2f0b83; --secondary-color: #d6a1a1; font-family: 'Caveat' ;
+@import url('https://fonts.googleapis.com/css?family=Caveat|Merriweather&display=swap');
+
+ :root {
+    --main-color: #2f0b83; 
+    --secondary-color: #d6a1a1;
+    font-family: 'Caveat' ;
     scroll-behavior: smooth;
 }
 
@@ -13,15 +17,22 @@ h1, p {
     padding: 0;
 }
 
-header nav h1 {
-    font-family: 'Merriweather';
-    font-size: 1rem;
-    text-decoration: none;
+header h1, a {
+    font-size: 2rem;
     text-transform: uppercase;
     text-align: left;
+    text-decoration: none;
 }
 
-header nav p {
+header nav a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+}
+
+header p {
+    font-family: 'Merriweather';
     text-decoration: none;
     font-size: 1rem;
     text-align: left;
@@ -37,7 +48,7 @@ header nav p {
     }
 }
 
-header nav .top-menu h1, p {
+header .top-menu h1 {
     font-size: 2rem;
 }
 
@@ -61,7 +72,12 @@ header nav .top-menu a:hover {
 }
 
 header img {
-    margin-right: 25px;
+    margin-right: 5px;
+    float: right;
+}
+
+header .top-menu img {
+    margin-right: 50px;
     float: right;
 }
 
