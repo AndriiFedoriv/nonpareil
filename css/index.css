@@ -1,159 +1,161 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat|Merriweather&display=swap');
 
- :root {
-    --main-color: #2f0b83; 
-    --secondary-color: #d6a1a1;
-    font-family: 'Caveat' ;
-    scroll-behavior: smooth;
+:root {
+  --main-color: #2f0b83;
+  --secondary-color: #d6a1a1;
+  font-family: 'Caveat';
+  scroll-behavior: smooth;
 }
 
 body {
-    max-width: 980px;
-    margin: auto;
+  max-width: 980px;
+  margin: auto;
 }
 
-h1, p {
-    margin: 0;
-    padding: 0;
+h1,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-header h1, a {
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: left;
-    text-decoration: none;
+header h1,
+a {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: none;
 }
 
 header nav a {
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-align: left;
-    text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: none;
 }
 
 header p {
-    font-family: 'Merriweather';
-    text-decoration: none;
-    font-size: 1rem;
-    text-align: left;
+  font-family: 'Merriweather';
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: left;
 }
 
 @media (min-width: 500px) {
-    header nav {
-        display: flex;
-    }
+  header nav {
+    display: flex;
+  }
 
-    header nav .top-menu {
-        flex: 1;
-    }
+  header nav .top-menu {
+    flex: 1;
+  }
 }
 
 header .top-menu h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 header nav .top-menu {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  list-style-type: none;
 }
 
 header nav .top-menu a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--main-color);
-    border: 1px solid transparent;
-    padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-color);
+  border: 1px solid transparent;
+  padding: 5px;
 }
 
 header nav .top-menu a:hover {
-    border: 1px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 header img {
-    margin-right: 5px;
-    float: right;
+  margin-right: 5px;
+  float: right;
 }
 
 header .top-menu img {
-    margin-right: 50px;
-    float: right;
+  margin-right: 50px;
+  float: right;
 }
 
 header div {
-    background-image: url(../img/bottle-of-perfume-and-scattered-roses.jpg);
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
+  background-image: url(../img/bottle-of-perfume-and-scattered-roses.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
 }
 
 header .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header .banner .title {
-    font-size: 2rem;
-    font-family: 'Merriweather';
-    text-transform: uppercase;
-    color: black;
+  font-size: 2rem;
+  font-family: 'Merriweather';
+  text-transform: uppercase;
+  color: black;
 }
 
 .button {
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 300;
-    color: #FFFFFF;
-    text-align: center;
-    transition: all 0.3s;
-    background-color: transparent;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.3s;
+  background-color: transparent;
 }
 
 .button:hover {
-    color: #000000;
-    background-color: #FFFFFF;
-    cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .card-button {
-    border-color: black;
-    color: black;
+  border-color: black;
+  color: black;
 }
 
 .card-button:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .goods {
-    margin-left: 30px;
-    float: left;
-    font-size: 7px;
-    text-shadow: 0 1px 0 #cec8db;
-    color: #2f0b83;
+  margin-left: 30px;
+  float: left;
+  font-size: 7px;
+  text-shadow: 0 1px 0 #cec8db;
+  color: #2f0b83;
 }
 
 #perfume {
-    border-top-style: solid;
-    line-height: 1.5;
-    padding: 30px;
+  border-top-style: solid;
+  line-height: 1.5;
+  padding: 30px;
 }
 
 #about-us img {
-    margin-left: 25px;
-    float: left;
+  margin-left: 25px;
+  float: left;
 }
 
 #contact {
-    border-top-style: solid;
-    line-height: 1.5;
-    padding: 30px;
+  border-top-style: solid;
+  line-height: 1.5;
+  padding: 30px;
 }
