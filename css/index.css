@@ -1,6 +1,5 @@
 header .search {
-    display: flex;
-    justify-content: left;
-    padding: 0;
-    list-style-type: none;
+    text-align: right;
+    color: #007bff;
+    border-color: #007bff;
 }
