@@ -1,6 +1,10 @@
-header .search {
+header .top-menu {
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
     padding: 0;
     list-style-type: none;
+}
+
+header h1, p {
+    text-align: left;
 }
