@@ -20,7 +20,10 @@
   </head>
   <body>
     <header class="container">
-      <div class="d-flex bd-highlight navbar navbar-light" style="background-color: #f1f7fb;">
+      <div
+        class="d-flex bd-highlight navbar navbar-light"
+        style="background-color: #f1f7fb;"
+      >
         <div class="p-2 flex-grow-1 bd-highlight">
           <h1 class="animated infinite bounceInDown delay-2s">
             <a href="./">Nonpareil</a>
@@ -39,13 +42,23 @@
               Знайти
             </button>
           </form>
+          <div>
+            <a
+              class="nav-link openCartLink"
+              href="#modal-cart"
+              data-toggle="modal"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              Cart<span id="cart-badge" class="badge badge-light"></span>
+            </a>
+          </div>
         </div>
       </div>
       <nav class="nav nav-pills flex-column flex-sm-row">
         <a class="flex-sm-fill text-sm-center nav-link active" href="./"
           >Парфуми</a
         >
-        <a class="flex-sm-fill text-sm-center nav-link" href="#perfume"
+        <a class="flex-sm-fill text-sm-center nav-link" href="#for-men"
           >Для чоловіків</a
         >
         <a class="flex-sm-fill text-sm-center nav-link" href="#perfume"
@@ -107,25 +120,13 @@
       </div>
     </header>
     <main class="container">
-      <section id="perfume">
-        <h2>Парфуми</h2>
-        <p>найкраще для тебе</p>
+      <section>
+        <h2 id="products">Products</h2>
+        <div class="row products-container">
+          <!--Products are dynamically generated here-->
+        </div>
       </section>
-      <section class="goods">
-        <img
-          src="img/nonpareil-perfumed-water-for-men-fahrenhit.jpg"
-          alt="Парфумована вода Nonpareil для чоловіків Fahrenhit"
-          title="Парфумована вода Nonpareil для чоловіків Fahrenhit"
-        />
-        <h2>Парфумована вода Nonpareil для чоловіків Fahrenhit</h2>
-        <br />
-        <p>249 грн.</p>
-        <img
-          src="img/package.png"
-          alt="Покласти в пакет"
-          title="Покласти в пакет"
-        />
-      </section>
+
       <section class="goods">
         <img
           src="img/nonpareil-perfume-unisex-baccarat-rouge-540.jpg"
@@ -235,7 +236,113 @@
         </form>
       </section>
     </footer>
-    <script src="js/index.js"></script>
+    <!-- Modal Product Info -->
+    <div
+      class="modal fade"
+      id="productInfoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="productInfoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="card-img-top" src="" alt="" />
+            <h4 class="card-title"></h4>
+            <p class="card-text"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-close"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button class="btn btn-primary buy" data-id="id">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Cart -->
+    <div
+      class="modal fade"
+      id="modal-cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="cartLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartLabel">Cart</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="cart-product-list-container"></div>
+            <hr />
+            <div class="container">
+              <form class="form-contacts">
+                <div class="form-group row">
+                  <label for="client-name" class="col-4 col-form-label"
+                    >Your name:</label
+                  >
+                  <input
+                    class="form-control col-8"
+                    type="text"
+                    id="client-name"
+                    required
+                  />
+                </div>
+                <div class="form-group row">
+                  <label for="client-email" class="col-4 col-form-label"
+                    >Your email:</label
+                  >
+                  <input
+                    class="form-control col-8"
+                    type="email"
+                    id="client-email"
+                    required
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-close"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button class="btn btn-primary order">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -251,5 +358,17 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+      integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script async src="js/alert-window.js"></script>
+    <script defer src="js/products-service.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>
+    <script defer src="js/index.js"></script>
   </body>
 </html>
