@@ -159,21 +159,23 @@
         <h2>Напишіть нам</h2>
         <p>завжди готові допомогти</p>
         <form action="https://formspree.io/xrgklbrv" method="POST">
-
-          <div class="col-md-12 mb-1">
+      <div class="form-row">
+          <div class="col-md-6 mb-2">
       <label for="validationServer01">Ваше ім'я</label>
       <input type="text" class="form-control is-valid" id="validationServer01" name="user_name"
               placeholder="Ваше ім'я" required>
       <div class="valid-feedback">
         Добре!
       </div>
-      <div class="col-md-12 mb-1">
+      <div class="col-md-6 mb-2">
       <label for="validationServer01">Ваш Email:</label>
       <input type="email" class="form-control is-valid" id="validationServer03" name="user_email"
               placeholder="Ваш Email:" required>
       <div class="valid-feedback">
         Добре!
       </div>
+      </div>
+      <div class="form-row">
       <div class="col-md-12 mb-1">
       <label for="validationServer01">Повідомлення</label>
       <textarea class="form-control is-valid" id="validationServer03" name="Message"
@@ -181,36 +183,9 @@
       <div class="valid-feedback">
         Добре!
       </div>
+      </div>
       <button class="btn btn-primary" type="submit">Надіслати</button>
       <button class="btn btn-info" type="reset">Очистити</button>
-
-          <label>
-            Ваше ім'я:
-            <input
-              type="text"
-              name="user_name"
-              placeholder="Ваше ім'я"
-              required
-            />
-          </label>
-          <br />
-          <label>
-            Ваш Email:
-            <input
-              type="email"
-              name="user_email"
-              placeholder="Ваш Email"
-              required
-            />
-          </label>
-          <br />
-          <label>
-            Повідомлення:
-            <textarea name="Message" placeholder="Повідомлення"></textarea>
-          </label>
-          <br />
-          <input type="submit" />
-          <input type="reset" />
         </form>
       </section>
     </footer>
