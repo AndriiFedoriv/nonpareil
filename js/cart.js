@@ -89,7 +89,7 @@ class Cart {
   }
   order(ev) {
     if (this.cartLength() === 0) {
-      window.showAlert('Please choose products to order', false);
+      window.showAlert('Будь-ласка, виберіть товар на замовлення', false);
       return;
     }
     const form = this.cartContainer.querySelector('.form-contacts');
@@ -110,7 +110,7 @@ class Cart {
           if (response.status === 200) {
             return response.text();
           } else {
-            throw new Error('Cannot send form');
+            throw new Error('Неможливо надіслати форму');
           }
         })
         .then(responseText => {
@@ -119,12 +119,12 @@ class Cart {
           this.saveCart();
           this.updateBadge();
           this.renderCart();
-          window.showAlert('Thank you! ' + responseText);
+          window.showAlert('Дякую! ' + responseText);
           this.cartContainer.querySelector('.btn-close').click();
         })
-        .catch(error => showAlert('There is an error: ' + error, false));
+        .catch(error => showAlert('Виникла помилка: ' + error, false));
     } else {
-      window.showAlert('Please fill form correctly', false);
+      window.showAlert('Будь ласка, заповніть форму правильно', false);
     }
   }
 }
