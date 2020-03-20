@@ -18,7 +18,7 @@ class ProductList {
                         alt="${product.title}">
                     <div class="card-body d-flex flex-column">
                       <h4 class="card-title">${product.title}</h4>
-                      <p class="card-text overflow-auto">${product.description}</p>
+                      <p class="card-text flex-fill">${product.description}</p>
                       <div class="d-flex justify-content-around">
                         <button class="btn btn-info" data-toggle="modal"
                           data-target="#productInfoModal" data-id="${product.id}">Інфо
