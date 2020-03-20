@@ -30,3 +30,9 @@
 .btn {
     padding: 0.75rem 0.7rem;
 }
+
+.logoAnimated {
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
