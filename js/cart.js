@@ -119,7 +119,7 @@ class Cart {
           this.saveCart();
           this.updateBadge();
           this.renderCart();
-          window.showAlert('Дякую! ' + responseText);
+          window.showAlert('Дякуємо! ' + responseText);
           this.cartContainer.querySelector('.btn-close').click();
         })
         .catch(error => showAlert('Виникла помилка: ' + error, false));
