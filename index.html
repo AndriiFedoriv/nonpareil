@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="img/women-in-black.jpg" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Nonpareil - магазин парфумів</title>
   </head>
   <body>
     <header class="container">
-      <div
-        class="d-flex bd-highlight">
+      <div class="d-flex bd-highlight">
         <div class="p-2 flex-fill bd-highlight">
           <h1 class="animated bounceInDown delay-2s">
             <a href="./">Nonpareil</a>
@@ -25,10 +24,12 @@
             <input
               class="form-control mr-sm-2"
               type="search"
-              placeholder=""
+              placeholder="Я шукаю ..."
               aria-label="Search"
             />
-            <button class="btn btn-light my-2 my-sm-0" type="submit">Знайти</button>
+            <button class="btn btn-light my-2 my-sm-0" type="submit">
+              Знайти
+            </button>
           </form>
         </div>
         <div class="p-2 bd-highlight">
@@ -119,60 +120,86 @@
         <h2>Про нас</h2>
         <p class="about-us">дещо про нас</p>
         <div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="img/interior-of-the-store.jpg" class="card-img" alt="інтерє'р магазину">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Магазин парфумів</h5>
-        <p class="card-text">Nonpareil -
-          <i
-            >магазин парфумів. Вже два роки ми виконуємо маленькі мрії та
-            грандіозні плани багатьох людей. Тут можна знайти будь-який аромат
-            на ваш смак. Ми продаємо за справедливою ціною і гарантуємо високу
-            якість продукції. Ми вважаємо що покупки в Інтернеті повинні бути
-            максимально зручними та безпечними. І кожен раз, коли хтось клацає
-            "Купити", ми розуміємо, що ми робимо правильно.</i
-          ></p>
-        <p class="card-text"><a href="https://www.facebook.com/NonpareilParfum/">
-          <img
-            src="img/social_facebook_button_blue.png"
-            alt="Ми в facebook"
-            title="Ми в facebook"
-          />https://www.facebook.com/NonpareilParfum
-        </a></p>
-      </div>
-    </div>
-  </div>
-</div>
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="img/interior-of-the-store.jpg"
+                class="card-img"
+                alt="інтерє'р магазину"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Магазин парфумів</h5>
+                <p class="card-text">
+                  Nonpareil -
+                  <i
+                    >магазин парфумів. Вже два роки ми виконуємо маленькі мрії
+                    та грандіозні плани багатьох людей. Тут можна знайти
+                    будь-який аромат на ваш смак. Ми продаємо за справедливою
+                    ціною і гарантуємо високу якість продукції. Ми вважаємо що
+                    покупки в Інтернеті повинні бути максимально зручними та
+                    безпечними. І кожен раз, коли хтось клацає "Купити", ми
+                    розуміємо, що ми робимо правильно.</i
+                  >
+                </p>
+                <p class="card-text">
+                  <a href="https://www.facebook.com/NonpareilParfum/">
+                    <img
+                      src="img/social_facebook_button_blue.png"
+                      alt="Ми в facebook"
+                      title="Ми в facebook"
+                    />https://www.facebook.com/NonpareilParfum
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="container">
       <section id="contact">
         <h2>Напишіть нам</h2>
         <p>завжди готові допомогти</p>
-       <form action="https://formspree.io/xrgklbrv" method="POST">
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validationServer01">Ваше ім'я</label>
-            <input type="text" class="form-control is-valid" id="validationServer01" name="user_name"
-              placeholder="Ваше ім'я" required>
+        <form action="https://formspree.io/xrgklbrv" method="POST">
+          <div class="form-row">
             <div class="col-md-4 mb-3">
-              <label for="validationServer01">Ваш Email:</label>
-              <input type="email" class="form-control is-valid" id="validationServer03" name="user_email"
-              placeholder="Ваш Email:" required>
+              <label for="validationServer01">Ваше ім'я</label>
+              <input
+                type="text"
+                class="form-control is-valid"
+                id="validationServer01"
+                name="user_name"
+                placeholder="Ваше ім'я"
+                required
+              />
+              <div class="col-md-4 mb-3">
+                <label for="validationServer01">Ваш Email:</label>
+                <input
+                  type="email"
+                  class="form-control is-valid"
+                  id="validationServer03"
+                  name="user_email"
+                  placeholder="Ваш Email:"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-1">
+                  <label for="validationServer01">Повідомлення</label>
+                  <textarea
+                    name="Message"
+                    placeholder="Пишіть тут ..."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <button class="btn btn-info" type="reset">Очистити</button>
+              <button class="btn btn-primary" type="submit">Надіслати</button>
             </div>
-            <div class="form-row">
-            <div class="col-md-12 mb-1">
-            <label for="validationServer01">Повідомлення</label>
-            <textarea name="Message" placeholder="Пишіть тут ..." required></textarea>
-            </div>
-            </div>
-          <button class="btn btn-info" type="reset">Очистити</button>
-          <button class="btn btn-primary" type="submit">Надіслати</button> 
-        </div>   
-      </form>
+          </div>
+        </form>
       </section>
     </footer>
     <!-- Modal Product Info -->
@@ -187,7 +214,9 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="productInfoLabel">Інформація про товар:</h5>
+            <h5 class="modal-title" id="productInfoLabel">
+              Інформація про товар:
+            </h5>
             <button
               type="button"
               class="close"
