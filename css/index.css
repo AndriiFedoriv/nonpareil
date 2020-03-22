@@ -36,3 +36,10 @@
   background-color: #593196;
   cursor: pointer;
 }
+
+@media (min-width: 550px) {
+  .card-text {
+    font-size: 0.7rem;
+    text-transform: none;
+  }
+}
