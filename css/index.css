@@ -37,9 +37,16 @@
   cursor: pointer;
 }
 
-@media (min-width: 550px) {
+@media (max-width: 550px) {
   .card-text {
     font-size: 0.7rem;
     text-transform: none;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+
+@media (min-width: 550px) {
+  .card-text {
+    text-shadow: 1px 1px 1px black;
   }
 }
