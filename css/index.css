@@ -48,6 +48,7 @@
   #about-us .card-text {
     font-size: 0.01rem;
     text-transform: none;
+    text-shadow: none;
   }
 }
 
