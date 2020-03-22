@@ -1,32 +1,48 @@
 :root {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 #carouselOffers {
-    min-height: 500px;
+  min-height: 500px;
 }
 
 #carouselOffers img {
-    max-height: 450px;
+  max-height: 450px;
 }
 
 .intro {
-    max-width: 400px;
-    margin-top: 150px;
-    text-align: center;
+  max-width: 400px;
+  margin-top: 150px;
+  text-align: center;
 }
 .card {
-    height: 100%;
+  height: 100%;
 }
 
 .alert {
-    position: fixed;
-    top: 50px; 
-    width: 50%;
-    left: 25%;
-    z-index: 1051;
+  position: fixed;
+  top: 50px;
+  width: 50%;
+  left: 25%;
+  z-index: 1051;
 }
 
 .btn {
-    padding: 0.75rem 0.7rem;
+  padding: 0.75rem 0.7rem;
+}
+
+@media (min-width: 550px) {
+  header nav {
+    display: flex;
+  }
+
+  header nav .top-menu {
+    flex: 1;
+  }
+}
+
+.nav:hover {
+  color: #000000;
+  background-color: #593196;
+  cursor: pointer;
 }
