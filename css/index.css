@@ -32,11 +32,10 @@
 }
 
 @media (min-width: 550px) {
-  #d-flex {
+  .rounded .float-left {
     display: flex;
   }
-
-  #d-flex {
+  .rounded .float-left {
     flex: 1;
   }
 }
