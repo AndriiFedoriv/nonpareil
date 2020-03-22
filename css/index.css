@@ -46,7 +46,7 @@
 
 @media (max-width: 420px) {
   #about-us .card-text {
-    font-size: none;
+    font-size: 0.01rem;
     text-transform: none;
   }
 }
