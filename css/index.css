@@ -32,17 +32,17 @@
 }
 
 @media (min-width: 550px) {
-  header nav {
+  #d-flex {
     display: flex;
   }
 
-  header nav .top-menu {
+  #d-flex {
     flex: 1;
   }
 }
 
 .nav:hover {
-  color: #000000;
+  color: #ffffff;
   background-color: #593196;
   cursor: pointer;
 }
