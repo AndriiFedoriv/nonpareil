@@ -128,16 +128,6 @@
               class="figure-img img-fluid rounded"
               alt="інтерє'р магазину"
             />
-            <p class="text-info text-decoration-none">
-              <a href="https://www.facebook.com/NonpareilParfum/">
-                <img
-                  src="img/social_facebook_button_blue.png"
-                  alt="Ми в facebook"
-                  title="Ми в facebook"
-                />
-                https://www.facebook.com/NonpareilParfum
-              </a>
-            </p>
           </div>
           <div class="p-2 flex-fill bd-highlight">
             <p class="text-secondary lead">
@@ -152,6 +142,17 @@
                 робимо правильно.</i
               >
             </p>
+            <p class="text-info text-decoration-none">
+              <a href="https://www.facebook.com/NonpareilParfum/">
+                <img
+                  src="img/social_facebook_button_blue.png"
+                  class="figure-img img-fluid rounded"
+                  alt="Ми в facebook"
+                  title="Ми в facebook"
+                />
+                https://www.facebook.com/NonpareilParfum
+              </a>
+            </p>
           </div>
         </div>
       </section>
@@ -161,42 +162,40 @@
         <h2 class="text-primary">Напишіть нам</h2>
         <p class="text-secondary">завжди готові допомогти</p>
         <form action="https://formspree.io/xrgklbrv" method="POST">
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
-              <label for="validationServer01">Ваше ім'я</label>
-              <input
-                type="text"
-                class="form-control"
-                id="validationServer01"
-                name="user_name"
-                placeholder="Ваше ім'я"
-                required
-              />
-              <div class="col-md-4 mb-3">
-                <label for="validationServer01">Ваш Email:</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="validationServer03"
-                  name="user_email"
-                  placeholder="Ваш Email:"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="validationServer01">Повідомлення</label>
-                <textarea
-                  class="form-control"
-                  name="Message"
-                  placeholder="Пишіть тут ..."
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button class="btn btn-info" type="reset">Очистити</button>
-              <button class="btn btn-primary" type="submit">Надіслати</button>
-            </div>
+          <div class="form-group">
+            <label for="validationServer01">Ваше ім'я</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationServer01"
+              name="user_name"
+              placeholder="Ваше ім'я"
+              required
+            />
           </div>
+          <div class="form-group">
+            <label for="validationServer01">Ваш Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="validationServer03"
+              name="user_email"
+              placeholder="Ваш Email:"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="validationServer01">Повідомлення</label>
+            <textarea
+              class="form-control"
+              name="Message"
+              placeholder="Пишіть тут ..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button class="btn btn-info" type="reset">Очистити</button>
+          <button class="btn btn-primary" type="submit">Надіслати</button>
         </form>
       </section>
     </footer>
