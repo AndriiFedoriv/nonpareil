@@ -38,15 +38,16 @@
 }
 
 @media (max-width: 770px) {
-  #about-us .card-text {
-    font-size: 0.5rem;
+  #about-us .card-text .card-title {
+    font-size: 0.65rem;
     text-transform: none;
-    text-shadow: 1px 1px 1px black;
   }
 }
 
-@media (min-width: 770px) {
-  #about-us .card-text {
-    text-shadow: 1px 1px 1px black;
-  }
+#about-us .card-text .card-title {
+  text-shadow: 1px 1px 1px black;
+}
+
+.facebook {
+  text-shadow: 1px 1px 1px white;
 }
