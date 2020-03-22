@@ -44,6 +44,13 @@
   }
 }
 
+@media (max-width: 420px) {
+  #about-us .card-text {
+    font-size: none;
+    text-transform: none;
+  }
+}
+
 @media (max-width: 770px) {
   #about-us .card-title {
     font-size: 0.6rem;
