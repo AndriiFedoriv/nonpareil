@@ -38,7 +38,7 @@
 }
 
 @media (max-width: 770px) {
-  #about-us .card-text .card-title {
+  #about-us .card-text {
     font-size: 0.6rem;
     text-transform: none;
   }
@@ -58,6 +58,6 @@
   text-shadow: 1px 1px 1px black;
 }
 
-.facebook {
+#about-us .facebook {
   text-shadow: 1px 1px 1px white;
 }
