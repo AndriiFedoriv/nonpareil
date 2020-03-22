@@ -48,9 +48,13 @@
   text-shadow: 1px 1px 1px black;
 }
 
+#about-us .card-text {
+  text-shadow: 1px 1px 1px black;
+}
+
 @media (max-width: 420px) {
   #about-us .card-text {
-    font-size: 0.001rem;
+    font-size: 0.01rem;
     text-transform: none;
     text-shadow: none;
   }
@@ -60,10 +64,6 @@
   #about-us .card-title {
     font-size: 0.6rem;
   }
-}
-
-#about-us .card-text {
-  text-shadow: 1px 1px 1px black;
 }
 
 #about-us .facebook {
