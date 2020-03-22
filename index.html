@@ -121,28 +121,23 @@
       <section id="about-us" class="shadow-lg p-3 mb-5 bg-white rounded">
         <h2 class="text-primary">Про нас</h2>
         <p class="text-secondary about-us">коротко хто ми є</p>
-        <div class="about-list">
-          <article>
-            <img
-              src="img/interior-of-the-store.jpg"
-              class="rounded float-left"
-              alt="інтерє'р магазину"
-            />
-          </article>
-          <article>
-            <p class="text-secondary lead">
-              <b>Nonpareil</b> -
-              <i
-                >магазин парфумів. Вже два роки ми виконуємо маленькі мрії та
-                грандіозні плани багатьох людей. Тут можна знайти будь-який
-                аромат на ваш смак. Ми продаємо за справедливою ціною і
-                гарантуємо високу якість продукції. Ми вважаємо що покупки в
-                Інтернеті повинні бути максимально зручними та безпечними. І
-                кожен раз, коли хтось клацає "Купити", ми розуміємо, що ми
-                робимо правильно.</i
-              >
+        <div class="card bg-dark text-white">
+          <img
+            src="img/interior-of-the-store.jpg"
+            class="card-img"
+            alt="інтерє'р магазину"
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title"><b>Nonpareil</b> - магазин парфумів.</h5>
+            <p class="card-text lead">
+              Вже два роки ми виконуємо маленькі мрії та грандіозні плани
+              багатьох людей. Тут можна знайти будь-який аромат на ваш смак. Ми
+              продаємо за справедливою ціною і гарантуємо високу якість
+              продукції. Ми вважаємо що покупки в Інтернеті повинні бути
+              максимально зручними та безпечними. І кожен раз, коли хтось клацає
+              "Купити", ми розуміємо, що ми робимо правильно.
             </p>
-            <p class="text-info text-decoration-none">
+            <p class="card-text">
               <a href="https://www.facebook.com/NonpareilParfum/">
                 <img
                   src="img/social_facebook_button_blue.png"
@@ -153,7 +148,7 @@
                 https://www.facebook.com/NonpareilParfum
               </a>
             </p>
-          </article>
+          </div>
         </div>
       </section>
     </main>
@@ -185,7 +180,9 @@
             />
           </div>
           <div class="form-group">
-            <label for="validationServer01">Повідомлення</label>
+            <span class="input-group-text" for="validationServer01"
+              >Повідомлення :</span
+            >
             <textarea
               class="form-control"
               name="Message"
