@@ -1,4 +1,4 @@
-class ProductListMen {
+class ProductList {
   constructor(cart) {
     this.cart = cart;
     this.container = document.querySelector('.products-container-men');
@@ -18,7 +18,7 @@ class ProductListMen {
                         alt="${product.title}">
                     <div class="card-body d-flex flex-column">
                       <h4 class="card-title">${product.title}</h4>
-                      <h4 class="category">${product.category}</h4>
+                      <h5 class="category">${product.category}</h5>
                       <p class="card-text flex-fill">${product.description}</p>
                       <div class="d-flex justify-content-around">
                         <button class="btn btn-info" data-toggle="modal"
