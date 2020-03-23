@@ -70,8 +70,8 @@
   text-shadow: 1px 1px 1px white;
 }
 
-.card-text {
-  width: 50px;
+.card-text .flex-fill {
+  width: 100px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
