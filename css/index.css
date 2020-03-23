@@ -70,7 +70,7 @@
   text-shadow: 1px 1px 1px white;
 }
 
-.modal-body .card-text {
+.modal-body {
   width: 70px;
   text-overflow: ellipsis;
   white-space: nowrap;
