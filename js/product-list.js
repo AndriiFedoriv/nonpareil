@@ -19,7 +19,7 @@ class ProductList {
                     <div class="card-body d-flex flex-column">
                       <h4 class="card-title">${product.title}</h4>
                       <h5 class="category">${product.category}</h5>
-                      <p class="card-text flex-fill">${product.description}</p>
+                      <p class="card-text flex-fill text-truncate"  style="max-width: 150px;">${product.description}</p>
                       <div class="d-flex justify-content-around">
                         <button class="btn btn-info" data-toggle="modal"
                           data-target="#productInfoModal" data-id="${product.id}">Інфо
