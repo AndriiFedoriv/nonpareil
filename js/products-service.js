@@ -6,7 +6,7 @@ class ProductsService {
   async getProducts() {
     if (!this.products) {
       this.products = await (await fetch('products.json')).json();
-      data.sort((a, b) => b.category - a.category);
+      data.sort((a, b) => b.title - a.title);
     }
     return this.products;
   }
