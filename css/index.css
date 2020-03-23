@@ -70,8 +70,8 @@
   text-shadow: 1px 1px 1px white;
 }
 
-.card-text .flex-fill {
-  width: 100px;
+.modal-body .card-text {
+  width: 70px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
