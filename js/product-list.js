@@ -1,7 +1,7 @@
 class ProductList {
   constructor(cart) {
     this.cart = cart;
-    this.container = document.querySelector('.products-container-men');
+    this.container = document.querySelector('.products-container');
     this.productService = new ProductsService();
     this.productService
       .getProducts()
