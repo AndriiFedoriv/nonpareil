@@ -51,6 +51,9 @@ class ProductList {
           this.handleProductBuyClick(event)
         )
       );
+    document
+      .getElementById('sort-by-category-for-men')
+      .addEventListener('click', () => this.sortByPriceIncrease());
   }
   async handleProductInfoClick(event) {
     const button = event.target; // Button that triggered the modal
