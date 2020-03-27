@@ -53,7 +53,7 @@ class ProductList {
       );
     document
       .getElementById('sort-by-category-for-men')
-      .addEventListener('click', () => this.sortByPriceIncrease());
+      .addEventListener('click', () => this.sortByCategoryForMen());
   }
   async handleProductInfoClick(event) {
     const button = event.target; // Button that triggered the modal
@@ -75,5 +75,12 @@ class ProductList {
     const id = button.dataset.id;
     this.cart.addProduct(id);
     window.showAlert('Товар додано до кошика');
+  }
+  async sortByCategoryForMen() {
+    this.productService = new ProductsService();
+    const products = await this.productService.getProducts.category.ForMen();
+    products.sort((a, b) => a.price - b.price);
+    this.renderProducts();
+    this.addEventListeners();
   }
 }
