@@ -79,7 +79,7 @@ class ProductList {
   async sortByCategoryForMen() {
     this.productService = new ProductsService();
     const products = await this.productService.getProducts();
-    products.sort((a, b) => a.category - b.category);
+    products.sort((a, b) => a.price - b.price);
     this.renderProducts();
     this.addEventListeners();
   }
